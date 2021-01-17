@@ -1,0 +1,11 @@
+.backgroundRed {
+  background-color: white;
+}
+
+.dot.slick-dots li.slick-active button {
+  background: red;
+}
+
+.dot.slick-dots li button {
+  background: red;
+}

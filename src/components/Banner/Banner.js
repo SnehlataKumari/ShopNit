@@ -5,14 +5,8 @@ import  banner3  from '../../assets/img/banner/Winter-Banner.jpg';
 
 
 const contentStyle = {
-  // height: '360px',
-  // color: '#fff',
-  // lineHeight: '160px',
-  // textAlign: 'center',
-  // background: '#364d79',
   height: '683.638px',
   touchAction: 'pan-y',
-
 };
 
 function Banner() {
