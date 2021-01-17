@@ -1,17 +1,5 @@
-import { Carousel, Image, Row, Col } from 'antd';
+import { Carousel, Row, Col } from 'antd';
 import "./QuickView.css";
-import t1 from '../../assets/img/quickView/t1.jpg';
-import t2 from '../../assets/img/quickView/t2.jpg';
-import t3 from '../../assets/img/quickView/t3.jpg';
-import t4 from '../../assets/img/quickView/t4.jpg';
-import t5 from '../../assets/img/quickView/t5.jpg';
-import t6 from '../../assets/img/quickView/t6.jpg';
-import t7 from '../../assets/img/quickView/t7.jpg';
-import t8 from '../../assets/img/quickView/t8.jpg';
-
-// function onChange(a) {
-//   console.log(a);
-// }
 
 const colStyle = {
   height: "420px",
@@ -22,20 +10,12 @@ const colStyle = {
   backgroundColor: 'red',
 }
 
-function QuickView() {
+function QuickView({itemsList= []}) {
   return (
     <>
       <Carousel autoplay className="backgroundRed" dots={{className: 'dot'}}>
-        {/* {
-          [t1, t2, t3, t4,t5, t6, t7, t8].map((imgSrc, i) => (
-            <div key={i} style={colStyle} className="asdf">
-              <img src={imgSrc} style={colStyle} alt="sfd"/>
-            </div>
-          ))
-        } */}
-
         {
-           [[t1, t2, t3, t4],[t5, t6, t7, t8]].map((row, i) => (
+          itemsList.map((row, i) => (
              <div>
                <Row key={i}>
                  {
@@ -47,13 +27,9 @@ function QuickView() {
                  }
                </Row>
              </div>
-            
            ))
         }
       </Carousel>
-      
-        
-     
     </>
   );
 }

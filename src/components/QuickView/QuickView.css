@@ -1,11 +1,13 @@
 .backgroundRed {
   background-color: white;
+  left: 15%;
+  width: 1200px;
 }
 
 .dot.slick-dots li.slick-active button {
-  background: red;
+  background: rgb(5, 38, 77);
 }
 
 .dot.slick-dots li button {
-  background: red;
+  background: rgb(5, 38, 77);
 }
