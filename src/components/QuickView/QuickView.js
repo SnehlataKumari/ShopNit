@@ -1,14 +1,14 @@
 import { Carousel, Row, Col } from 'antd';
 import "./QuickView.css";
 
-const colStyle = {
-  height: "420px",
-  display: "flex",
-  verticalAlign: "middle",
-  position: "relative",
-  width: "320px",
-  backgroundColor: 'red',
-}
+// const colStyle = {
+//   height: "420px",
+//   display: "flex",
+//   verticalAlign: "middle",
+//   position: "relative",
+//   width: "320px",
+//   backgroundColor: 'red',
+// }
 
 function QuickView({itemsList= []}) {
   return (
@@ -21,7 +21,7 @@ function QuickView({itemsList= []}) {
                  {
                    row.map((col, i) => (
                      <Col className="gutter-row" marginLeft="15%" span={6} key={i}>
-                       <img alt="" width="320px" height="420px" style={colStyle} src={col} />
+                       <img alt="" width="320px" height="420px" src={col} />
                      </Col>
                    ))
                  }

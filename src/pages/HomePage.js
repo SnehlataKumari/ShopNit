@@ -1,4 +1,5 @@
 import { CustomerServiceOutlined, TransactionOutlined, CarOutlined } from '@ant-design/icons';
+import { Card } from 'antd';
 import Banner from '../components/Banner/Banner';
 import MiniBanner from '../components/Banner/MiniBanner';
 import DividerBar from '../components/DividerBar/DividerBar';
@@ -30,6 +31,19 @@ import t22 from '../assets/img/quickView/t22.jpg';
 import t23 from '../assets/img/quickView/t23.jpg';
 import t24 from '../assets/img/quickView/t24.jpg';
 import OurSerivces from '../components/OurServices/OurServices';
+import './HomePage.css';
+
+const { Meta } = Card;
+
+const ServicesCard = ({ icon, title, description}) =>  (
+  < Card
+    // hoverable
+    className="customerServiceIcon"
+    cover = {icon}
+      >
+    <Meta title={title} description={description} />
+  </Card >
+);
 
 function HomePage() {
   return (
@@ -45,7 +59,9 @@ function HomePage() {
       <DividerBar heading="HOODIES" />
       <QuickView itemsList={[[t17, t18, t19, t20], [t21, t22, t23, t24]]} />
       <DividerBar heading="OUR SERVICES" />
-      <OurSerivces icons={[<CustomerServiceOutlined />, <CarOutlined />, <TransactionOutlined />]}/>
+      <OurSerivces icons={[<ServicesCard icon={<CustomerServiceOutlined/>} title="CUSTOMER SERVICE" description="24*7 Customer Care" />,
+                          <ServicesCard icon={<CarOutlined/>} title="free shipping" description="Free Shipping for orders above 500" />,
+                          <ServicesCard icon={<TransactionOutlined/>} title="money back" description="100% MoneyBack Guaranteed"/>]}/>
     </>
   )
 }
