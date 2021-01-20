@@ -1,5 +1,3 @@
-import { CustomerServiceOutlined, TransactionOutlined, CarOutlined } from '@ant-design/icons';
-import { Card } from 'antd';
 import Banner from '../components/Banner/Banner';
 import MiniBanner from '../components/Banner/MiniBanner';
 import DividerBar from '../components/DividerBar/DividerBar';
@@ -32,38 +30,41 @@ import t23 from '../assets/img/quickView/t23.jpg';
 import t24 from '../assets/img/quickView/t24.jpg';
 import OurSerivces from '../components/OurServices/OurServices';
 import './HomePage.css';
-
-const { Meta } = Card;
-
-const ServicesCard = ({ icon, title, description}) =>  (
-  < Card
-    // hoverable
-    className="customerServiceIcon"
-    cover = {icon}
-      >
-    <Meta title={title} description={description} />
-  </Card >
-);
+import Footer from '../components/Footer/Footer';
 
 function HomePage() {
   return (
     <>
       <Header />
       <Banner />
-      <MiniBanner/>
-      <HotDealCards/>
+      <MiniBanner />
+      <HotDealCards />
       <DividerBar heading="HALF SLEEVE T-SHIRTS" />
-      <QuickView itemsList={[[t1, t2, t3, t4],[t5, t6, t7, t8]]}/>
+      <QuickView
+        itemsList={[
+          [t1, t2, t3, t4],
+          [t5, t6, t7, t8],
+        ]}
+      />
       <DividerBar heading="FULL SLEEVE T-SHIRTS" />
-      <QuickView itemsList={[[t9, t10, t11, t12], [t13, t14, t15, t16]]} />
+      <QuickView
+        itemsList={[
+          [t9, t10, t11, t12],
+          [t13, t14, t15, t16],
+        ]}
+      />
       <DividerBar heading="HOODIES" />
-      <QuickView itemsList={[[t17, t18, t19, t20], [t21, t22, t23, t24]]} />
+      <QuickView
+        itemsList={[
+          [t17, t18, t19, t20],
+          [t21, t22, t23, t24],
+        ]}
+      />
       <DividerBar heading="OUR SERVICES" />
-      <OurSerivces icons={[<ServicesCard icon={<CustomerServiceOutlined/>} title="CUSTOMER SERVICE" description="24*7 Customer Care" />,
-                          <ServicesCard icon={<CarOutlined/>} title="free shipping" description="Free Shipping for orders above 500" />,
-                          <ServicesCard icon={<TransactionOutlined/>} title="money back" description="100% MoneyBack Guaranteed"/>]}/>
+      <OurSerivces />
+      <Footer/>
     </>
-  )
+  );
 }
 
 export default HomePage;

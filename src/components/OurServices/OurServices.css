@@ -1,0 +1,14 @@
+.rowStyle {
+  margin-left: 16%;
+  margin-right: 15%;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.colStyle {
+  height: 120px;
+  display: flex;
+  vertical-align: middle;
+  position: relative;
+  width: 1420px;
+}

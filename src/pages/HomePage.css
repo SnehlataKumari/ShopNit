@@ -20,3 +20,15 @@
       color: #777;
       font-weight: 600;
 }
+
+.customerServiceIcon div.ant-card-bordered .ant-card-cover{
+  width: 320px;
+}
+
+.customerServiceIcon div.ant-card-body{
+  width: 320px;
+}
+
+.customerServiceIcon div.ant-card-cover{
+  width: 320px;
+}

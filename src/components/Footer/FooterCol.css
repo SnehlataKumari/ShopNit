@@ -1,0 +1,46 @@
+.menu {
+      color: #58595b;
+      display: inline-block;
+    padding: 6px 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    touch-action: manipulation;
+    cursor: pointer;
+    list-style: none;
+  line-height: 1.05;
+  letter-spacing: .05em;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.list {
+    color: #58595b;
+    padding: 6px 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    touch-action: manipulation;
+    cursor: pointer;
+    list-style: none;
+  line-height: 1.05;
+  letter-spacing: .05em;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+
+.is-divider {
+  margin-top: .66em;
+  height: 3px;
+  display: block;
+  background-color: rgba(0,0,0,0.1);
+  margin: 1em 0 1em;
+  width: 100%;
+  max-width: 30px;
+}
+
+.icons {
+  display: inline-flex;
+}
