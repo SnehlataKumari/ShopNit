@@ -1,0 +1,35 @@
+.customerServiceIcon {
+  color: black;
+  font-size: 80px;
+  width: 240px;
+  border: none;
+}
+
+.customerServiceIcon div.ant-card-meta-description {
+      font-size: 16.52px;
+      text-align: center;
+      color: #777;
+      font-weight: 600;
+}
+
+.customerServiceIcon div.ant-card-meta-title {
+  color: #555;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 750;
+  line-height: 1.2;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.customerServiceIcon div.ant-card-bordered .ant-card-cover{
+  width: 320px;
+}
+
+.customerServiceIcon div.ant-card-body{
+  width: 320px;
+}
+
+.customerServiceIcon div.ant-card-cover{
+  width: 320px;
+}

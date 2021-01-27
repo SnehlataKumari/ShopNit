@@ -22,3 +22,16 @@
   color: white;
 }
  */
+
+ .contentStyle {
+  margin-left: auto;
+  margin-right: auto;
+  height: 248px;
+  display: flex;
+  width: initial;
+  vertical-align: middle;
+  position: relative;
+  margin: -32px 0px - 33px 0px;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border - box;
+}

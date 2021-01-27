@@ -1,5 +1,5 @@
 import { Col } from "antd";
-import './FooterCol.css';
+import "./FooterCol.css";
 
 const FooterCol = ({ title, icons = [], menu = [], inputFeild, button }) => (
   <Col>

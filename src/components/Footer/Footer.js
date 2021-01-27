@@ -1,9 +1,13 @@
 import { Row, Col, Button } from "antd";
-import {  FacebookOutlined, TwitterOutlined,
-     MailOutlined, 
-     InstagramOutlined,} from '@ant-design/icons';
-import './Footer.css';
-import FooterCol from "./FooterCol";
+import {
+  FacebookOutlined,
+  TwitterOutlined,
+  MailOutlined,
+  InstagramOutlined,
+} from "@ant-design/icons";
+import "./Footer.css";
+import FooterCol from "../FooterColumns/FooterCol";
+import AbsoluteFooter from "../AbsoluteFooter/AbsoluteFooter";
 
 const footerItems = [
   <FooterCol
@@ -55,6 +59,7 @@ function Footer() {
           ))}
         </Row>
       </div>
+      <AbsoluteFooter />
     </>
   );
 }

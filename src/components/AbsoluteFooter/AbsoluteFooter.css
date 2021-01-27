@@ -1,0 +1,9 @@
+.absFooter {
+    text-align: center;
+    background-color: #e6e7e8;
+    color: rgba(0,0,0,0.85);
+}
+.footer {
+  background-color: #e6e7e8;
+   display: block;
+}
